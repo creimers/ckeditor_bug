@@ -1,0 +1,6 @@
+
+{%  load menu_tags %}
+{% for child in children %}
+<a href="{{ child.get_absolute_url }}" class="mdl-navigation__link">{{child.get_menu_title}}</a>
+{% endfor %}
+
